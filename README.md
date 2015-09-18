@@ -1,6 +1,8 @@
 DbContextScope
 ==============
 
+[![Join the chat at https://gitter.im/arandjel-sarenac-devtech/DbContextScope](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/arandjel-sarenac-devtech/DbContextScope?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 A simple and flexible way to manage your Entity Framework DbContext instances.
 
 `DbContextScope` was created out of the need for a better way to manage DbContext instances in Entity Framework-based applications. 
