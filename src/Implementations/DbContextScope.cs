@@ -11,6 +11,10 @@ namespace DbContextScope.Implementations
     using System;
     using System.Collections;
     using System.Data;
+    using System.Data.Entity;
+    using System.Data.Entity.Core.Objects;
+    using System.Data.Entity.Infrastructure;
+    using System.Diagnostics;
     using System.Linq;
     using System.Runtime.CompilerServices;
     using System.Runtime.Remoting.Messaging;
@@ -263,7 +267,7 @@ namespace DbContextScope.Implementations
                     }
                     catch (Exception e)
                     {
-                        System.Diagnostics.Debug.WriteLine(e);
+                        Debug.WriteLine(e);
                     }
 
                     _completed = true;
@@ -328,7 +332,7 @@ In order to fix this:
 Stack Trace:
 " + Environment.StackTrace;
 
-                    System.Diagnostics.Debug.WriteLine(message);
+                    Debug.WriteLine(message);
                 }
                 else
                 {
@@ -498,7 +502,7 @@ Stack Trace:
             // the GC would be able to collect it. Once collected by the GC, our ConditionalWeakTable will return
             // null when queried for that instance. In that case, we're OK. This is a programming error 
             // but our use of a ConditionalWeakTable prevented a leak.
-            System.Diagnostics.Debug.WriteLine("Programming error detected. Found a reference to an ambient DbContextScope in the CallContext but didn't have an instance for it in our DbContextScopeInstances table. This most likely means that this DbContextScope instance wasn't disposed of properly. DbContextScope instance must always be disposed. Review the code for any DbContextScope instance used outside of a 'using' block and fix it so that all DbContextScope instances are disposed of.");
+            Debug.WriteLine("Programming error detected. Found a reference to an ambient DbContextScope in the CallContext but didn't have an instance for it in our DbContextScopeInstances table. This most likely means that this DbContextScope instance wasn't disposed of properly. DbContextScope instance must always be disposed. Review the code for any DbContextScope instance used outside of a 'using' block and fix it so that all DbContextScope instances are disposed of.");
             return null;
         }
 

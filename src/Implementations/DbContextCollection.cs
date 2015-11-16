@@ -12,6 +12,7 @@ namespace DbContextScope.Implementations
     using System.Collections.Generic;
     using System.Data;
     using System.Data.Entity;
+    using System.Diagnostics;
     using System.Runtime.ExceptionServices;
     using System.Threading;
     using System.Threading.Tasks;
@@ -254,7 +255,7 @@ namespace DbContextScope.Implementations
                 }
                 catch (Exception e)
                 {
-                    System.Diagnostics.Debug.WriteLine(e);
+                    Debug.WriteLine(e);
                 }
             }
 
@@ -266,7 +267,7 @@ namespace DbContextScope.Implementations
                 }
                 catch (Exception e)
                 {
-                    System.Diagnostics.Debug.WriteLine(e);
+                    Debug.WriteLine(e);
                 }
             }
 
