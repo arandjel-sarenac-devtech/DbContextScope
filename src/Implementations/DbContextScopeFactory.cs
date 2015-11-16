@@ -8,7 +8,7 @@
 using System;
 using System.Data;
 
-namespace Mehdime.Entity
+namespace DbContextScope
 {
     public class DbContextScopeFactory : IDbContextScopeFactory
     {

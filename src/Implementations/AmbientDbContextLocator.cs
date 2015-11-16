@@ -7,7 +7,7 @@
  */
 using System.Data.Entity;
 
-namespace Mehdime.Entity
+namespace DbContextScope
 {
     public class AmbientDbContextLocator : IAmbientDbContextLocator
     {

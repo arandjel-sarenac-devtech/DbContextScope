@@ -7,7 +7,7 @@
  */
 using System;
 
-namespace Mehdime.Entity
+namespace DbContextScope
 {
     public class AmbientContextSuppressor : IDisposable
     {

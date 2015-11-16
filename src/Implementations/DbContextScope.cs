@@ -17,7 +17,7 @@ using System.Runtime.Remoting.Messaging;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace Mehdime.Entity
+namespace DbContextScope
 {
     public class DbContextScope : IDbContextScope
     {

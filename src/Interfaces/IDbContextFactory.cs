@@ -7,7 +7,7 @@
  */
 using System.Data.Entity;
 
-namespace Mehdime.Entity
+namespace DbContextScope
 {
     /// <summary>
     /// Factory for DbContext-derived classes that don't expose 

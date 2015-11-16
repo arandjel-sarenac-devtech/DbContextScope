@@ -7,7 +7,7 @@
  */
 using System.Data.Entity;
 
-namespace Mehdime.Entity
+namespace DbContextScope
 {
     /// <summary>
     /// Convenience methods to retrieve ambient DbContext instances. 

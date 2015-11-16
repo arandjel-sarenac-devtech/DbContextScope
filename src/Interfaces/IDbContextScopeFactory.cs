@@ -8,7 +8,7 @@
 using System;
 using System.Data;
 
-namespace Mehdime.Entity
+namespace DbContextScope
 {
     /// <summary>
     /// Convenience methods to create a new ambient DbContextScope. This is the prefered method
