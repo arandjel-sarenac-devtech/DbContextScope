@@ -5,13 +5,14 @@
  * This software may be modified and distributed under the terms
  * of the MIT license.  See the LICENSE file for details.
  */
-using System;
-using System.Collections;
-using System.Threading;
-using System.Threading.Tasks;
 
-namespace DbContextScope
+namespace DbContextScope.Interfaces
 {
+    using System;
+    using System.Collections;
+    using System.Threading;
+    using System.Threading.Tasks;
+
     /// <summary>
     /// Creates and manages the DbContext instances used by this code block. 
     /// 

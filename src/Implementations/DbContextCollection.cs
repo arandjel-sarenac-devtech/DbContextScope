@@ -5,16 +5,18 @@
  * This software may be modified and distributed under the terms
  * of the MIT license.  See the LICENSE file for details.
  */
-using System;
-using System.Collections.Generic;
-using System.Data;
-using System.Data.Entity;
-using System.Runtime.ExceptionServices;
-using System.Threading;
-using System.Threading.Tasks;
 
-namespace DbContextScope
+namespace DbContextScope.Implementations
 {
+    using System;
+    using System.Collections.Generic;
+    using System.Data;
+    using System.Data.Entity;
+    using System.Runtime.ExceptionServices;
+    using System.Threading;
+    using System.Threading.Tasks;
+    using Interfaces;
+
     /// <summary>
     /// As its name suggests, DbContextCollection maintains a collection of DbContext instances.
     /// 

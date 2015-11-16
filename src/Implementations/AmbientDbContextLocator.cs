@@ -5,10 +5,12 @@
  * This software may be modified and distributed under the terms
  * of the MIT license.  See the LICENSE file for details.
  */
-using System.Data.Entity;
 
-namespace DbContextScope
+namespace DbContextScope.Implementations
 {
+    using System.Data.Entity;
+    using Interfaces;
+
     public class AmbientDbContextLocator : IAmbientDbContextLocator
     {
         public TDbContext Get<TDbContext>() where TDbContext : DbContext

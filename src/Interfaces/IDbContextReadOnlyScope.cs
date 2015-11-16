@@ -5,10 +5,11 @@
  * This software may be modified and distributed under the terms
  * of the MIT license.  See the LICENSE file for details.
  */
-using System;
 
-namespace DbContextScope
+namespace DbContextScope.Interfaces
 {
+    using System;
+
     /// <summary>
     /// A read-only DbContextScope. Refer to the comments for IDbContextScope
     /// for more details.

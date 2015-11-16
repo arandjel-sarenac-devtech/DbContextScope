@@ -5,20 +5,20 @@
  * This software may be modified and distributed under the terms
  * of the MIT license.  See the LICENSE file for details.
  */
-using System;
-using System.Collections;
-using System.Data;
-using System.Data.Entity;
-using System.Data.Entity.Core.Objects;
-using System.Data.Entity.Infrastructure;
-using System.Linq;
-using System.Runtime.CompilerServices;
-using System.Runtime.Remoting.Messaging;
-using System.Threading;
-using System.Threading.Tasks;
 
-namespace DbContextScope
+namespace DbContextScope.Implementations
 {
+    using System;
+    using System.Collections;
+    using System.Data;
+    using System.Linq;
+    using System.Runtime.CompilerServices;
+    using System.Runtime.Remoting.Messaging;
+    using System.Threading;
+    using System.Threading.Tasks;
+    using Enums;
+    using Interfaces;
+
     public class DbContextScope : IDbContextScope
     {
         private bool _disposed;
